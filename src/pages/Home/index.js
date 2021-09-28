@@ -10,6 +10,7 @@ import Space from "../../components/Space";
 export default function Homepage() {
   const spaces = useSelector(fetchedSpaces);
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(fetchSpaces());
   }, []);
