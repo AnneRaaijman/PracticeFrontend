@@ -3,9 +3,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchedDetails } from "../../store/spaces/actions";
-import { Carousel } from "react-bootstrap";
 import { selectFetchedDetails } from "../../store/spaces/selectors";
-import Space from "../../components/Space";
 import Stories from "../../components/Stories";
 import { Container, Jumbotron } from "react-bootstrap";
 
