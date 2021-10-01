@@ -131,3 +131,17 @@ export const deleteStory = (id) => {
     }
   };
 };
+
+export const postStory = (newPost) => {
+  return async (dispatch, getState) => {
+    try {
+      console.log("new post", newPost);
+      const res = await axios.post("http://localhost:4000/myspace", {
+        newPost,
+      });
+      console.log(res);
+    } catch (e) {
+      console.log(e.message);
+    }
+  };
+};

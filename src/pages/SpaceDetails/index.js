@@ -12,7 +12,7 @@ export default function SpaceDetails(props) {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-  // console.log("space data", stories);
+  console.log("space data", stories);
 
   useEffect(() => {
     dispatch(fetchedDetails(id));

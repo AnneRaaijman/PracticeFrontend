@@ -14,8 +14,8 @@ export const fetchSpaces = () => {
 export const fetchedDetails = (id) => {
   return async (dispatch, getState) => {
     try {
-      console.log("data");
-      const res = await axios.get(`http://localhost:4000/spaces/story/${id}`);
+      console.log("param", id);
+      const res = await axios.get(`http://localhost:4000/spaces/${id}`);
       console.log("details data", res);
       dispatch({ type: "space/detailsfetched", payload: res.data });
     } catch (e) {
